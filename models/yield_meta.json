@@ -1,0 +1,3169 @@
+{
+  "feature_cols": [
+    "state_enc",
+    "season_enc",
+    "crop_enc",
+    "district_enc",
+    "area",
+    "log_area",
+    "crop_mean_yield",
+    "crop_median_yield",
+    "crop_std_yield",
+    "state_mean_yield",
+    "crop_season_mean",
+    "year"
+  ],
+  "r2_score": 0.9411,
+  "mae": 0.7619,
+  "crops": [
+    "Arcanut (Processed)",
+    "Arecanut",
+    "Arhar/Tur",
+    "Atcanut (Raw)",
+    "Bajra",
+    "Banana",
+    "Barley",
+    "Bean",
+    "Beans & Mutter(Vegetable)",
+    "Bhindi",
+    "Bitter Gourd",
+    "Black Pepper",
+    "Blackgram",
+    "Bottle Gourd",
+    "Brinjal",
+    "Cabbage",
+    "Cardamom",
+    "Carrot",
+    "Cashewnut",
+    "Cashewnut Processed",
+    "Cashewnut Raw",
+    "Castor Seed",
+    "Cauliflower",
+    "Citrus Fruit",
+    "Coconut",
+    "Coffee",
+    "Colocosia",
+    "Cond-Spcs Other",
+    "Coriander",
+    "Cotton(Lint)",
+    "Cowpea(Lobia)",
+    "Drum Stick",
+    "Dry Chillies",
+    "Dry Ginger",
+    "Garlic",
+    "Ginger",
+    "Gram",
+    "Grapes",
+    "Groundnut",
+    "Guar Seed",
+    "Horse-Gram",
+    "Jack Fruit",
+    "Jobster",
+    "Jowar",
+    "Jute",
+    "Jute & Mesta",
+    "Kapas",
+    "Khesari",
+    "Korra",
+    "Lemon",
+    "Lentil",
+    "Linseed",
+    "Maize",
+    "Mango",
+    "Masoor",
+    "Mesta",
+    "Moong(Green Gram)",
+    "Moth",
+    "Niger Seed",
+    "Oilseeds Total",
+    "Onion",
+    "Orange",
+    "Other  Rabi Pulses",
+    "Other Cereals & Millets",
+    "Other Fresh Fruits",
+    "Other Kharif Pulses",
+    "Other Misc. Pulses",
+    "Other Oilseeds",
+    "Other Vegetables",
+    "Paddy",
+    "Papaya",
+    "Peas & Beans (Pulses)",
+    "Perilla",
+    "Pineapple",
+    "Pome Fruit",
+    "Pome Granet",
+    "Potato",
+    "Pulses Total",
+    "Ragi",
+    "Rajmash Kholar",
+    "Rapeseed &Mustard",
+    "Redish",
+    "Rice",
+    "Ricebean (Nagadal)",
+    "Rubber",
+    "Safflower",
+    "Samai",
+    "Sannhamp",
+    "Sapota",
+    "Sesamum",
+    "Small Millets",
+    "Soyabean",
+    "Sugarcane",
+    "Sunflower",
+    "Sweet Potato",
+    "Tapioca",
+    "Tea",
+    "Tobacco",
+    "Tomato",
+    "Total Foodgrain",
+    "Turmeric",
+    "Turnip",
+    "Urad",
+    "Varagu",
+    "Wheat"
+  ],
+  "states": [
+    "Andaman And Nicobar Islands",
+    "Andhra Pradesh",
+    "Arunachal Pradesh",
+    "Assam",
+    "Bihar",
+    "Chandigarh",
+    "Chhattisgarh",
+    "Dadra And Nagar Haveli",
+    "Goa",
+    "Gujarat",
+    "Haryana",
+    "Himachal Pradesh",
+    "Jammu And Kashmir",
+    "Jharkhand",
+    "Karnataka",
+    "Kerala",
+    "Madhya Pradesh",
+    "Maharashtra",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Odisha",
+    "Puducherry",
+    "Punjab",
+    "Rajasthan",
+    "Sikkim",
+    "Tamil Nadu",
+    "Telangana",
+    "Tripura",
+    "Uttar Pradesh",
+    "Uttarakhand",
+    "West Bengal"
+  ],
+  "seasons": [
+    "Autumn",
+    "Kharif",
+    "Rabi",
+    "Summer",
+    "Whole Year",
+    "Winter"
+  ],
+  "crop_stats": [
+    {
+      "crop": "Arcanut (Processed)",
+      "mean": 1.2848377972315908,
+      "median": 1.3973406200619647,
+      "std": 0.2952240232750632
+    },
+    {
+      "crop": "Arecanut",
+      "mean": 2.165313530976743,
+      "median": 1.2,
+      "std": 2.6322887953902847
+    },
+    {
+      "crop": "Arhar/Tur",
+      "mean": 0.8022314258321699,
+      "median": 0.7332974814018105,
+      "std": 0.43033824121283487
+    },
+    {
+      "crop": "Atcanut (Raw)",
+      "mean": 6.216615908824843,
+      "median": 6.7,
+      "std": 1.317548716351329
+    },
+    {
+      "crop": "Bajra",
+      "mean": 1.1825705596573886,
+      "median": 1.0389805097451275,
+      "std": 0.7091414722329963
+    },
+    {
+      "crop": "Banana",
+      "mean": 26.77602447271435,
+      "median": 21.804605197970986,
+      "std": 17.22803231787073
+    },
+    {
+      "crop": "Barley",
+      "mean": 1.8398543876354936,
+      "median": 1.6802951703789692,
+      "std": 0.8850108336634381
+    },
+    {
+      "crop": "Bean",
+      "mean": 1.3400001866104085,
+      "median": 1.3333333333333333,
+      "std": 0.034487297931309176
+    },
+    {
+      "crop": "Beans & Mutter(Vegetable)",
+      "mean": 5.102352996380728,
+      "median": 5.116048824593128,
+      "std": 2.274363101393524
+    },
+    {
+      "crop": "Bhindi",
+      "mean": 6.049771085483849,
+      "median": 7.0,
+      "std": 2.5335215058189235
+    },
+    {
+      "crop": "Bitter Gourd",
+      "mean": 5.841491841491841,
+      "median": 5.374125874125874,
+      "std": 1.1509077300736936
+    },
+    {
+      "crop": "Black Pepper",
+      "mean": 1.191993918004841,
+      "median": 0.6301607311692404,
+      "std": 1.2102206621001577
+    },
+    {
+      "crop": "Blackgram",
+      "mean": 0.7164246051574522,
+      "median": 0.7417943107221007,
+      "std": 0.12083838348783293
+    },
+    {
+      "crop": "Bottle Gourd",
+      "mean": 7.678417037507947,
+      "median": 7.2,
+      "std": 1.15091554184127
+    },
+    {
+      "crop": "Brinjal",
+      "mean": 10.467539706167004,
+      "median": 9.0920245398773,
+      "std": 5.682726308046825
+    },
+    {
+      "crop": "Cabbage",
+      "mean": 25.06983661297681,
+      "median": 18.772222222222222,
+      "std": 18.67517180756881
+    },
+    {
+      "crop": "Cardamom",
+      "mean": 0.16424062922053603,
+      "median": 0.09498680738786279,
+      "std": 0.28810117784354117
+    },
+    {
+      "crop": "Carrot",
+      "mean": 7.021800133131402,
+      "median": 7.5,
+      "std": 2.3056520179639097
+    },
+    {
+      "crop": "Cashewnut",
+      "mean": 0.5015275981029662,
+      "median": 0.3979248288765889,
+      "std": 0.3808122565015207
+    },
+    {
+      "crop": "Cashewnut Processed",
+      "mean": 0.12353375993155781,
+      "median": 0.12525987525987525,
+      "std": 0.03369398260555415
+    },
+    {
+      "crop": "Cashewnut Raw",
+      "mean": 0.5026502779234476,
+      "median": 0.4670072371221797,
+      "std": 0.22308636565272094
+    },
+    {
+      "crop": "Castor Seed",
+      "mean": 0.7016947559995026,
+      "median": 0.5,
+      "std": 0.6041761359556268
+    },
+    {
+      "crop": "Cauliflower",
+      "mean": 8.479362785496322,
+      "median": 8.6,
+      "std": 1.3700707089783817
+    },
+    {
+      "crop": "Citrus Fruit",
+      "mean": 6.764081874402016,
+      "median": 4.747094374709437,
+      "std": 6.237368236170114
+    },
+    {
+      "crop": "Coconut",
+      "mean": 8.560255610405477,
+      "median": 6.851053126093294,
+      "std": 7.759986508827968
+    },
+    {
+      "crop": "Coffee",
+      "mean": 0.7088075516647366,
+      "median": 0.7397666975490609,
+      "std": 0.1245254944994145
+    },
+    {
+      "crop": "Colocosia",
+      "mean": 9.510369595198457,
+      "median": 9.508771929824562,
+      "std": 0.00992782550446147
+    },
+    {
+      "crop": "Cond-Spcs Other",
+      "mean": 0.8329151746996777,
+      "median": 0.8158402203856749,
+      "std": 0.29107186674242314
+    },
+    {
+      "crop": "Coriander",
+      "mean": 0.4995842886002881,
+      "median": 0.4807692307692308,
+      "std": 0.34827307566266413
+    },
+    {
+      "crop": "Cotton(Lint)",
+      "mean": 1.7349692473469849,
+      "median": 1.3812193854107346,
+      "std": 2.992753463483731
+    },
+    {
+      "crop": "Cowpea(Lobia)",
+      "mean": 0.49591493570800743,
+      "median": 0.37142857142857144,
+      "std": 0.37033407402855345
+    },
+    {
+      "crop": "Drum Stick",
+      "mean": 0.9902854725570086,
+      "median": 0.9635036496350365,
+      "std": 0.43460469667034446
+    },
+    {
+      "crop": "Dry Chillies",
+      "mean": 1.380119217595575,
+      "median": 0.9223034734917733,
+      "std": 1.3828599930945555
+    },
+    {
+      "crop": "Dry Ginger",
+      "mean": 5.371188788354844,
+      "median": 2.4953398415914534,
+      "std": 6.665949474614416
+    },
+    {
+      "crop": "Garlic",
+      "mean": 3.3305796709515443,
+      "median": 2.888888888888889,
+      "std": 2.368535785682398
+    },
+    {
+      "crop": "Ginger",
+      "mean": 8.572291227587488,
+      "median": 8.69158878504673,
+      "std": 2.182971903712771
+    },
+    {
+      "crop": "Gram",
+      "mean": 0.8358159497510602,
+      "median": 0.8063737324963786,
+      "std": 0.38837201634238433
+    },
+    {
+      "crop": "Grapes",
+      "mean": 22.551417462970825,
+      "median": 23.948275862068968,
+      "std": 7.127570206499567
+    },
+    {
+      "crop": "Groundnut",
+      "mean": 1.2018821792794625,
+      "median": 1.0472185836515147,
+      "std": 0.801090596093057
+    },
+    {
+      "crop": "Guar Seed",
+      "mean": 1.0222221811034196,
+      "median": 0.8181818181818182,
+      "std": 2.1112213208394364
+    },
+    {
+      "crop": "Horse-Gram",
+      "mean": 0.4562279916526795,
+      "median": 0.4009584664536741,
+      "std": 0.23406076109480115
+    },
+    {
+      "crop": "Jack Fruit",
+      "mean": 9.252758390041743,
+      "median": 9.666666666666666,
+      "std": 2.5360516874601293
+    },
+    {
+      "crop": "Jobster",
+      "mean": 1.0058201058201057,
+      "median": 1.0,
+      "std": 0.03792953379475719
+    },
+    {
+      "crop": "Jowar",
+      "mean": 1.0581359263820744,
+      "median": 0.9697951891025414,
+      "std": 0.6442868295520642
+    },
+    {
+      "crop": "Jute",
+      "mean": 9.456482539274898,
+      "median": 9.333333333333334,
+      "std": 4.486532182340453
+    },
+    {
+      "crop": "Jute & Mesta",
+      "mean": 8.114555455371264,
+      "median": 8.019607843137255,
+      "std": 0.5036147361314199
+    },
+    {
+      "crop": "Kapas",
+      "mean": 0.7663445733926881,
+      "median": 0.9116086425408458,
+      "std": 0.3346031234990591
+    },
+    {
+      "crop": "Khesari",
+      "mean": 0.7881322908244975,
+      "median": 0.7692307692307693,
+      "std": 0.3120011913573258
+    },
+    {
+      "crop": "Korra",
+      "mean": 0.6782316292545555,
+      "median": 0.707839651123784,
+      "std": 0.2686544344781773
+    },
+    {
+      "crop": "Lemon",
+      "mean": 7.932812276256422,
+      "median": 7.357142857142857,
+      "std": 3.2938797811859337
+    },
+    {
+      "crop": "Lentil",
+      "mean": 0.7583813524063322,
+      "median": 0.8095238095238095,
+      "std": 0.12272561731145228
+    },
+    {
+      "crop": "Linseed",
+      "mean": 0.524471169264754,
+      "median": 0.46206342166537306,
+      "std": 0.276079373434039
+    },
+    {
+      "crop": "Maize",
+      "mean": 2.1421825183214556,
+      "median": 1.8,
+      "std": 1.3625220906432107
+    },
+    {
+      "crop": "Mango",
+      "mean": 5.391127492799702,
+      "median": 4.829510829284361,
+      "std": 3.5948894974428867
+    },
+    {
+      "crop": "Masoor",
+      "mean": 0.7065077314525345,
+      "median": 0.6829268292682927,
+      "std": 0.33627446640434056
+    },
+    {
+      "crop": "Mesta",
+      "mean": 5.569946360556797,
+      "median": 5.0,
+      "std": 3.812693061815453
+    },
+    {
+      "crop": "Moong(Green Gram)",
+      "mean": 0.4614515053236731,
+      "median": 0.425531914893617,
+      "std": 0.251875799736354
+    },
+    {
+      "crop": "Moth",
+      "mean": 0.3990986728873591,
+      "median": 0.3718805704099822,
+      "std": 0.2365659624537356
+    },
+    {
+      "crop": "Niger Seed",
+      "mean": 0.391302340921159,
+      "median": 0.29006679492307785,
+      "std": 1.6095479411840359
+    },
+    {
+      "crop": "Oilseeds Total",
+      "mean": 0.975178265973571,
+      "median": 0.9784172661870504,
+      "std": 0.33981648056874814
+    },
+    {
+      "crop": "Onion",
+      "mean": 11.51995638464205,
+      "median": 10.3,
+      "std": 7.384285921145018
+    },
+    {
+      "crop": "Orange",
+      "mean": 9.677284937184183,
+      "median": 9.969835466179159,
+      "std": 4.6138030276214925
+    },
+    {
+      "crop": "Other  Rabi Pulses",
+      "mean": 0.656539200309124,
+      "median": 0.5555555555555556,
+      "std": 0.703713581327973
+    },
+    {
+      "crop": "Other Cereals & Millets",
+      "mean": 0.837008510763711,
+      "median": 0.8158951074260521,
+      "std": 0.44870512588535033
+    },
+    {
+      "crop": "Other Fresh Fruits",
+      "mean": 3.6388348883111536,
+      "median": 3.073232323232323,
+      "std": 3.2817543580196156
+    },
+    {
+      "crop": "Other Kharif Pulses",
+      "mean": 0.5142793234282953,
+      "median": 0.46153846153846156,
+      "std": 0.41719959052107425
+    },
+    {
+      "crop": "Other Misc. Pulses",
+      "mean": 0.3696543638045162,
+      "median": 0.35118628141883956,
+      "std": 0.21982066886481072
+    },
+    {
+      "crop": "Other Oilseeds",
+      "mean": 1.6378341543909591,
+      "median": 0.5,
+      "std": 4.644376045704062
+    },
+    {
+      "crop": "Other Vegetables",
+      "mean": 5.556494209687746,
+      "median": 5.0,
+      "std": 4.299842754931943
+    },
+    {
+      "crop": "Paddy",
+      "mean": 1.947781061565844,
+      "median": 1.7185630254222313,
+      "std": 0.9732789376370751
+    },
+    {
+      "crop": "Papaya",
+      "mean": 19.668914051189503,
+      "median": 15.825816993464052,
+      "std": 18.128824536589548
+    },
+    {
+      "crop": "Peas & Beans (Pulses)",
+      "mean": 1.2775327614264795,
+      "median": 0.9610576736609393,
+      "std": 1.5920031910293688
+    },
+    {
+      "crop": "Perilla",
+      "mean": 0.5958030882603937,
+      "median": 0.6,
+      "std": 0.03097811914998377
+    },
+    {
+      "crop": "Pineapple",
+      "mean": 13.996944130905733,
+      "median": 14.647058823529411,
+      "std": 5.872284626346502
+    },
+    {
+      "crop": "Pome Fruit",
+      "mean": 8.271700529347385,
+      "median": 5.564315352697095,
+      "std": 10.696643999175084
+    },
+    {
+      "crop": "Pome Granet",
+      "mean": 12.469846102047127,
+      "median": 13.4,
+      "std": 2.05362528093956
+    },
+    {
+      "crop": "Potato",
+      "mean": 12.823824182191045,
+      "median": 10.839013157894737,
+      "std": 7.298460693320735
+    },
+    {
+      "crop": "Pulses Total",
+      "mean": 0.7177444479763448,
+      "median": 0.7067723342939481,
+      "std": 0.33068969494063105
+    },
+    {
+      "crop": "Ragi",
+      "mean": 1.2014916425862994,
+      "median": 1.0705217448952533,
+      "std": 0.6956732667860352
+    },
+    {
+      "crop": "Rajmash Kholar",
+      "mean": 1.2438567540822327,
+      "median": 1.2516226476711434,
+      "std": 0.024862360633150837
+    },
+    {
+      "crop": "Rapeseed &Mustard",
+      "mean": 0.7771972212007793,
+      "median": 0.721012520413718,
+      "std": 0.4788660480183928
+    },
+    {
+      "crop": "Redish",
+      "mean": 8.457873546912568,
+      "median": 8.92,
+      "std": 2.5207517631798924
+    },
+    {
+      "crop": "Rice",
+      "mean": 1.9860518585968998,
+      "median": 1.9415384615384614,
+      "std": 0.9635008512290514
+    },
+    {
+      "crop": "Ricebean (Nagadal)",
+      "mean": 1.107430125225784,
+      "median": 1.1099033816425121,
+      "std": 0.017598324863713603
+    },
+    {
+      "crop": "Rubber",
+      "mean": 1.1859109662121985,
+      "median": 1.1872098208430606,
+      "std": 0.17899066600866426
+    },
+    {
+      "crop": "Safflower",
+      "mean": 0.5534308406073004,
+      "median": 0.5,
+      "std": 0.2971879920306392
+    },
+    {
+      "crop": "Samai",
+      "mean": 0.554050655667175,
+      "median": 0.5289913700107874,
+      "std": 0.22282947977378334
+    },
+    {
+      "crop": "Sannhamp",
+      "mean": 1.2311189120415689,
+      "median": 0.5,
+      "std": 1.9867387163118913
+    },
+    {
+      "crop": "Sapota",
+      "mean": 10.267325516590827,
+      "median": 9.406995230524643,
+      "std": 2.537203211015635
+    },
+    {
+      "crop": "Sesamum",
+      "mean": 0.44293687505116225,
+      "median": 0.3333333333333333,
+      "std": 1.5140337880757038
+    },
+    {
+      "crop": "Small Millets",
+      "mean": 0.671922915655281,
+      "median": 0.6016042780748663,
+      "std": 0.7054570275746193
+    },
+    {
+      "crop": "Soyabean",
+      "mean": 1.0502569554963928,
+      "median": 1.0,
+      "std": 0.5453702249693316
+    },
+    {
+      "crop": "Sugarcane",
+      "mean": 45.748368625161206,
+      "median": 48.4,
+      "std": 20.69760637219179
+    },
+    {
+      "crop": "Sunflower",
+      "mean": 0.9485074265651816,
+      "median": 0.8018207445572989,
+      "std": 1.1061826860880908
+    },
+    {
+      "crop": "Sweet Potato",
+      "mean": 8.873850413738694,
+      "median": 8.236842105263158,
+      "std": 4.924481974518675
+    },
+    {
+      "crop": "Tapioca",
+      "mean": 18.7852712203163,
+      "median": 11.45,
+      "std": 14.406047447939407
+    },
+    {
+      "crop": "Tea",
+      "mean": 2.516269888375824,
+      "median": 2.3157276995305165,
+      "std": 1.7210375247778593
+    },
+    {
+      "crop": "Tobacco",
+      "mean": 1.9362054292598656,
+      "median": 1.1233766233766234,
+      "std": 1.8398609409476367
+    },
+    {
+      "crop": "Tomato",
+      "mean": 10.473163172527194,
+      "median": 9.641752577319588,
+      "std": 6.505911942468361
+    },
+    {
+      "crop": "Total Foodgrain",
+      "mean": 1.5373176982030994,
+      "median": 1.4696276754457958,
+      "std": 0.87528180940145
+    },
+    {
+      "crop": "Turmeric",
+      "mean": 2.7631755234218978,
+      "median": 2.0,
+      "std": 2.2875901894587733
+    },
+    {
+      "crop": "Turnip",
+      "mean": 0.6034304737565055,
+      "median": 0.6190476190476191,
+      "std": 0.1785363608176265
+    },
+    {
+      "crop": "Urad",
+      "mean": 0.49929803148986873,
+      "median": 0.4649846086191733,
+      "std": 0.3136045792946393
+    },
+    {
+      "crop": "Varagu",
+      "mean": 0.9310659245403735,
+      "median": 1.0,
+      "std": 0.2807074298348526
+    },
+    {
+      "crop": "Wheat",
+      "mean": 2.094114565570135,
+      "median": 1.8926824590006712,
+      "std": 1.0574616451145242
+    }
+  ],
+  "state_stats": [
+    {
+      "state": "Andaman And Nicobar Islands",
+      "mean": 4.077042895389735
+    },
+    {
+      "state": "Andhra Pradesh",
+      "mean": 4.773282723684727
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "mean": 3.647128799616023
+    },
+    {
+      "state": "Assam",
+      "mean": 3.9017893790931213
+    },
+    {
+      "state": "Bihar",
+      "mean": 3.4132697072164313
+    },
+    {
+      "state": "Chandigarh",
+      "mean": 7.827886501762906
+    },
+    {
+      "state": "Chhattisgarh",
+      "mean": 2.1568379325458014
+    },
+    {
+      "state": "Dadra And Nagar Haveli",
+      "mean": 5.185879271158788
+    },
+    {
+      "state": "Goa",
+      "mean": 8.041981556158913
+    },
+    {
+      "state": "Gujarat",
+      "mean": 5.349766430370433
+    },
+    {
+      "state": "Haryana",
+      "mean": 7.248095270299007
+    },
+    {
+      "state": "Himachal Pradesh",
+      "mean": 1.972667085433284
+    },
+    {
+      "state": "Jammu And Kashmir",
+      "mean": 1.5835170061083532
+    },
+    {
+      "state": "Jharkhand",
+      "mean": 2.6691562140604956
+    },
+    {
+      "state": "Karnataka",
+      "mean": 3.1884569497952917
+    },
+    {
+      "state": "Kerala",
+      "mean": 5.993188806920142
+    },
+    {
+      "state": "Madhya Pradesh",
+      "mean": 3.190601712330596
+    },
+    {
+      "state": "Maharashtra",
+      "mean": 2.8460675167738487
+    },
+    {
+      "state": "Manipur",
+      "mean": 4.632231398224482
+    },
+    {
+      "state": "Meghalaya",
+      "mean": 2.956008699088481
+    },
+    {
+      "state": "Mizoram",
+      "mean": 2.283390723092053
+    },
+    {
+      "state": "Nagaland",
+      "mean": 3.3522617476013243
+    },
+    {
+      "state": "Odisha",
+      "mean": 3.609237226575895
+    },
+    {
+      "state": "Puducherry",
+      "mean": 6.209499160474702
+    },
+    {
+      "state": "Punjab",
+      "mean": 5.7913570512818
+    },
+    {
+      "state": "Rajasthan",
+      "mean": 2.9121458517809864
+    },
+    {
+      "state": "Sikkim",
+      "mean": 1.3061182854277127
+    },
+    {
+      "state": "Tamil Nadu",
+      "mean": 5.716200013974163
+    },
+    {
+      "state": "Telangana",
+      "mean": 3.906373200295264
+    },
+    {
+      "state": "Tripura",
+      "mean": 4.740502046192847
+    },
+    {
+      "state": "Uttar Pradesh",
+      "mean": 5.293846930739923
+    },
+    {
+      "state": "Uttarakhand",
+      "mean": 3.316488923137946
+    },
+    {
+      "state": "West Bengal",
+      "mean": 4.051696239980812
+    }
+  ],
+  "crop_season_stats": [
+    {
+      "crop": "Arcanut (Processed)",
+      "season": "Whole Year",
+      "mean": 1.2848377972315908
+    },
+    {
+      "crop": "Arecanut",
+      "season": "Kharif",
+      "mean": 1.4028327435171437
+    },
+    {
+      "crop": "Arecanut",
+      "season": "Rabi",
+      "mean": 1.0771581111385196
+    },
+    {
+      "crop": "Arecanut",
+      "season": "Whole Year",
+      "mean": 2.265528806914208
+    },
+    {
+      "crop": "Arhar/Tur",
+      "season": "Autumn",
+      "mean": 0.21148177877790253
+    },
+    {
+      "crop": "Arhar/Tur",
+      "season": "Kharif",
+      "mean": 0.8058356771515794
+    },
+    {
+      "crop": "Arhar/Tur",
+      "season": "Rabi",
+      "mean": 0.8605753630099263
+    },
+    {
+      "crop": "Arhar/Tur",
+      "season": "Summer",
+      "mean": 0.21639343546811562
+    },
+    {
+      "crop": "Arhar/Tur",
+      "season": "Whole Year",
+      "mean": 0.7764774364841945
+    },
+    {
+      "crop": "Arhar/Tur",
+      "season": "Winter",
+      "mean": 0.2586138716852717
+    },
+    {
+      "crop": "Atcanut (Raw)",
+      "season": "Whole Year",
+      "mean": 6.216615908824843
+    },
+    {
+      "crop": "Bajra",
+      "season": "Kharif",
+      "mean": 1.0933944977790815
+    },
+    {
+      "crop": "Bajra",
+      "season": "Rabi",
+      "mean": 1.2907530495312736
+    },
+    {
+      "crop": "Bajra",
+      "season": "Summer",
+      "mean": 2.114443417458655
+    },
+    {
+      "crop": "Bajra",
+      "season": "Whole Year",
+      "mean": 1.647470532364138
+    },
+    {
+      "crop": "Banana",
+      "season": "Autumn",
+      "mean": 12.717633292633293
+    },
+    {
+      "crop": "Banana",
+      "season": "Kharif",
+      "mean": 19.734435116085237
+    },
+    {
+      "crop": "Banana",
+      "season": "Rabi",
+      "mean": 13.88108213300965
+    },
+    {
+      "crop": "Banana",
+      "season": "Summer",
+      "mean": 41.35140883536517
+    },
+    {
+      "crop": "Banana",
+      "season": "Whole Year",
+      "mean": 26.441452095944932
+    },
+    {
+      "crop": "Banana",
+      "season": "Winter",
+      "mean": 13.895091369881285
+    },
+    {
+      "crop": "Barley",
+      "season": "Kharif",
+      "mean": 1.8346366003039833
+    },
+    {
+      "crop": "Barley",
+      "season": "Rabi",
+      "mean": 1.8429259468909607
+    },
+    {
+      "crop": "Barley",
+      "season": "Whole Year",
+      "mean": 1.6051124843671898
+    },
+    {
+      "crop": "Bean",
+      "season": "Kharif",
+      "mean": 1.3400001866104085
+    },
+    {
+      "crop": "Beans & Mutter(Vegetable)",
+      "season": "Whole Year",
+      "mean": 5.102352996380728
+    },
+    {
+      "crop": "Bhindi",
+      "season": "Whole Year",
+      "mean": 6.049771085483849
+    },
+    {
+      "crop": "Bitter Gourd",
+      "season": "Whole Year",
+      "mean": 5.841491841491841
+    },
+    {
+      "crop": "Black Pepper",
+      "season": "Kharif",
+      "mean": 0.5060527311780298
+    },
+    {
+      "crop": "Black Pepper",
+      "season": "Rabi",
+      "mean": 1.5766705453147352
+    },
+    {
+      "crop": "Black Pepper",
+      "season": "Whole Year",
+      "mean": 1.1462276543540384
+    },
+    {
+      "crop": "Blackgram",
+      "season": "Kharif",
+      "mean": 0.7705845237920206
+    },
+    {
+      "crop": "Blackgram",
+      "season": "Rabi",
+      "mean": 0.6765172966898756
+    },
+    {
+      "crop": "Bottle Gourd",
+      "season": "Whole Year",
+      "mean": 7.678417037507947
+    },
+    {
+      "crop": "Brinjal",
+      "season": "Kharif",
+      "mean": 13.298293532253302
+    },
+    {
+      "crop": "Brinjal",
+      "season": "Rabi",
+      "mean": 12.735158883716698
+    },
+    {
+      "crop": "Brinjal",
+      "season": "Summer",
+      "mean": 15.711514572384138
+    },
+    {
+      "crop": "Brinjal",
+      "season": "Whole Year",
+      "mean": 9.072937924988405
+    },
+    {
+      "crop": "Cabbage",
+      "season": "Kharif",
+      "mean": 17.57071842154766
+    },
+    {
+      "crop": "Cabbage",
+      "season": "Rabi",
+      "mean": 17.973293634713603
+    },
+    {
+      "crop": "Cabbage",
+      "season": "Whole Year",
+      "mean": 36.88239565796164
+    },
+    {
+      "crop": "Cardamom",
+      "season": "Kharif",
+      "mean": 0.7556393145493492
+    },
+    {
+      "crop": "Cardamom",
+      "season": "Whole Year",
+      "mean": 0.12090538072661437
+    },
+    {
+      "crop": "Carrot",
+      "season": "Whole Year",
+      "mean": 7.021800133131402
+    },
+    {
+      "crop": "Cashewnut",
+      "season": "Kharif",
+      "mean": 0.4386313060579237
+    },
+    {
+      "crop": "Cashewnut",
+      "season": "Rabi",
+      "mean": 0.4739694255436384
+    },
+    {
+      "crop": "Cashewnut",
+      "season": "Whole Year",
+      "mean": 0.5051880403826522
+    },
+    {
+      "crop": "Cashewnut Processed",
+      "season": "Whole Year",
+      "mean": 0.12353375993155781
+    },
+    {
+      "crop": "Cashewnut Raw",
+      "season": "Whole Year",
+      "mean": 0.5026502779234476
+    },
+    {
+      "crop": "Castor Seed",
+      "season": "Kharif",
+      "mean": 0.7192803857589415
+    },
+    {
+      "crop": "Castor Seed",
+      "season": "Rabi",
+      "mean": 0.5556453020178128
+    },
+    {
+      "crop": "Castor Seed",
+      "season": "Whole Year",
+      "mean": 0.6019722445285233
+    },
+    {
+      "crop": "Cauliflower",
+      "season": "Whole Year",
+      "mean": 8.479362785496322
+    },
+    {
+      "crop": "Citrus Fruit",
+      "season": "Whole Year",
+      "mean": 6.764081874402016
+    },
+    {
+      "crop": "Coconut",
+      "season": "Kharif",
+      "mean": 6.203870892543661
+    },
+    {
+      "crop": "Coconut",
+      "season": "Whole Year",
+      "mean": 8.586840463632635
+    },
+    {
+      "crop": "Coffee",
+      "season": "Whole Year",
+      "mean": 0.7088075516647366
+    },
+    {
+      "crop": "Colocosia",
+      "season": "Kharif",
+      "mean": 9.510369595198457
+    },
+    {
+      "crop": "Cond-Spcs Other",
+      "season": "Kharif",
+      "mean": 0.7943078627968754
+    },
+    {
+      "crop": "Cond-Spcs Other",
+      "season": "Rabi",
+      "mean": 0.8811743145781805
+    },
+    {
+      "crop": "Coriander",
+      "season": "Kharif",
+      "mean": 0.5297720443190826
+    },
+    {
+      "crop": "Coriander",
+      "season": "Rabi",
+      "mean": 0.5416464388006291
+    },
+    {
+      "crop": "Coriander",
+      "season": "Whole Year",
+      "mean": 0.4914165822420465
+    },
+    {
+      "crop": "Coriander",
+      "season": "Winter",
+      "mean": 0.8
+    },
+    {
+      "crop": "Cotton(Lint)",
+      "season": "Autumn",
+      "mean": 0.6666666666666666
+    },
+    {
+      "crop": "Cotton(Lint)",
+      "season": "Kharif",
+      "mean": 1.5482420517802873
+    },
+    {
+      "crop": "Cotton(Lint)",
+      "season": "Rabi",
+      "mean": 2.096947760213084
+    },
+    {
+      "crop": "Cotton(Lint)",
+      "season": "Summer",
+      "mean": 1.9153198806451563
+    },
+    {
+      "crop": "Cotton(Lint)",
+      "season": "Whole Year",
+      "mean": 3.6249191339264257
+    },
+    {
+      "crop": "Cotton(Lint)",
+      "season": "Winter",
+      "mean": 0.3333333333333333
+    },
+    {
+      "crop": "Cowpea(Lobia)",
+      "season": "Kharif",
+      "mean": 0.4522805869793946
+    },
+    {
+      "crop": "Cowpea(Lobia)",
+      "season": "Rabi",
+      "mean": 0.5692554973121928
+    },
+    {
+      "crop": "Cowpea(Lobia)",
+      "season": "Summer",
+      "mean": 0.37903343850276006
+    },
+    {
+      "crop": "Drum Stick",
+      "season": "Whole Year",
+      "mean": 0.9902854725570086
+    },
+    {
+      "crop": "Dry Chillies",
+      "season": "Autumn",
+      "mean": 0.7287495538524021
+    },
+    {
+      "crop": "Dry Chillies",
+      "season": "Kharif",
+      "mean": 1.448042570834185
+    },
+    {
+      "crop": "Dry Chillies",
+      "season": "Rabi",
+      "mean": 2.151840040002691
+    },
+    {
+      "crop": "Dry Chillies",
+      "season": "Summer",
+      "mean": 3.0687191484380762
+    },
+    {
+      "crop": "Dry Chillies",
+      "season": "Whole Year",
+      "mean": 1.1076559084206057
+    },
+    {
+      "crop": "Dry Chillies",
+      "season": "Winter",
+      "mean": 0.5932081807081807
+    },
+    {
+      "crop": "Dry Ginger",
+      "season": "Autumn",
+      "mean": 1.6198412698412696
+    },
+    {
+      "crop": "Dry Ginger",
+      "season": "Kharif",
+      "mean": 4.163949391720855
+    },
+    {
+      "crop": "Dry Ginger",
+      "season": "Rabi",
+      "mean": 6.050168395198183
+    },
+    {
+      "crop": "Dry Ginger",
+      "season": "Summer",
+      "mean": 1.8294117647058823
+    },
+    {
+      "crop": "Dry Ginger",
+      "season": "Whole Year",
+      "mean": 6.427458979881024
+    },
+    {
+      "crop": "Dry Ginger",
+      "season": "Winter",
+      "mean": 1.5892857142857142
+    },
+    {
+      "crop": "Garlic",
+      "season": "Kharif",
+      "mean": 9.167418052637174
+    },
+    {
+      "crop": "Garlic",
+      "season": "Rabi",
+      "mean": 4.6491418049813475
+    },
+    {
+      "crop": "Garlic",
+      "season": "Whole Year",
+      "mean": 3.0136470645637665
+    },
+    {
+      "crop": "Ginger",
+      "season": "Kharif",
+      "mean": 8.780964828263077
+    },
+    {
+      "crop": "Ginger",
+      "season": "Rabi",
+      "mean": 7.805675297697304
+    },
+    {
+      "crop": "Ginger",
+      "season": "Whole Year",
+      "mean": 9.781254490206877
+    },
+    {
+      "crop": "Gram",
+      "season": "Kharif",
+      "mean": 0.5580162480457266
+    },
+    {
+      "crop": "Gram",
+      "season": "Rabi",
+      "mean": 0.8431517394289963
+    },
+    {
+      "crop": "Gram",
+      "season": "Whole Year",
+      "mean": 0.6933321736280912
+    },
+    {
+      "crop": "Gram",
+      "season": "Winter",
+      "mean": 0.8821282086151137
+    },
+    {
+      "crop": "Grapes",
+      "season": "Kharif",
+      "mean": 21.729034170754062
+    },
+    {
+      "crop": "Grapes",
+      "season": "Whole Year",
+      "mean": 22.652117457936143
+    },
+    {
+      "crop": "Groundnut",
+      "season": "Autumn",
+      "mean": 0.8682721334822705
+    },
+    {
+      "crop": "Groundnut",
+      "season": "Kharif",
+      "mean": 1.0636976531366782
+    },
+    {
+      "crop": "Groundnut",
+      "season": "Rabi",
+      "mean": 1.572753940566488
+    },
+    {
+      "crop": "Groundnut",
+      "season": "Summer",
+      "mean": 1.4456268941980408
+    },
+    {
+      "crop": "Groundnut",
+      "season": "Whole Year",
+      "mean": 1.6535682771709184
+    },
+    {
+      "crop": "Groundnut",
+      "season": "Winter",
+      "mean": 1.055130135877702
+    },
+    {
+      "crop": "Guar Seed",
+      "season": "Kharif",
+      "mean": 0.837976153067368
+    },
+    {
+      "crop": "Guar Seed",
+      "season": "Whole Year",
+      "mean": 1.1666164756679698
+    },
+    {
+      "crop": "Horse-Gram",
+      "season": "Kharif",
+      "mean": 0.5088160992384864
+    },
+    {
+      "crop": "Horse-Gram",
+      "season": "Rabi",
+      "mean": 0.42210204218989195
+    },
+    {
+      "crop": "Horse-Gram",
+      "season": "Summer",
+      "mean": 0.2563235920836068
+    },
+    {
+      "crop": "Horse-Gram",
+      "season": "Whole Year",
+      "mean": 0.507860268997433
+    },
+    {
+      "crop": "Horse-Gram",
+      "season": "Winter",
+      "mean": 0.3113092444499193
+    },
+    {
+      "crop": "Jack Fruit",
+      "season": "Whole Year",
+      "mean": 9.252758390041743
+    },
+    {
+      "crop": "Jobster",
+      "season": "Kharif",
+      "mean": 1.0058201058201057
+    },
+    {
+      "crop": "Jowar",
+      "season": "Autumn",
+      "mean": 0.36820512820512824
+    },
+    {
+      "crop": "Jowar",
+      "season": "Kharif",
+      "mean": 1.0155406269044178
+    },
+    {
+      "crop": "Jowar",
+      "season": "Rabi",
+      "mean": 1.0651654007166498
+    },
+    {
+      "crop": "Jowar",
+      "season": "Summer",
+      "mean": 1.90073336608746
+    },
+    {
+      "crop": "Jowar",
+      "season": "Whole Year",
+      "mean": 1.0470944421664736
+    },
+    {
+      "crop": "Jute",
+      "season": "Autumn",
+      "mean": 5.699261906209282
+    },
+    {
+      "crop": "Jute",
+      "season": "Kharif",
+      "mean": 9.799874740099737
+    },
+    {
+      "crop": "Jute",
+      "season": "Rabi",
+      "mean": 7.057714420846014
+    },
+    {
+      "crop": "Jute",
+      "season": "Summer",
+      "mean": 2.0
+    },
+    {
+      "crop": "Jute & Mesta",
+      "season": "Kharif",
+      "mean": 8.229502932492847
+    },
+    {
+      "crop": "Jute & Mesta",
+      "season": "Whole Year",
+      "mean": 7.942134239688885
+    },
+    {
+      "crop": "Kapas",
+      "season": "Kharif",
+      "mean": 0.7776895204391432
+    },
+    {
+      "crop": "Kapas",
+      "season": "Whole Year",
+      "mean": 0.7436546792997781
+    },
+    {
+      "crop": "Khesari",
+      "season": "Kharif",
+      "mean": 0.8681506849315068
+    },
+    {
+      "crop": "Khesari",
+      "season": "Rabi",
+      "mean": 0.7912748397414213
+    },
+    {
+      "crop": "Khesari",
+      "season": "Whole Year",
+      "mean": 0.6469833554151578
+    },
+    {
+      "crop": "Korra",
+      "season": "Kharif",
+      "mean": 0.6679278436034091
+    },
+    {
+      "crop": "Korra",
+      "season": "Rabi",
+      "mean": 0.8121808427194606
+    },
+    {
+      "crop": "Lemon",
+      "season": "Kharif",
+      "mean": 7.932812276256422
+    },
+    {
+      "crop": "Lentil",
+      "season": "Rabi",
+      "mean": 0.7583813524063322
+    },
+    {
+      "crop": "Linseed",
+      "season": "Kharif",
+      "mean": 0.45641114828609136
+    },
+    {
+      "crop": "Linseed",
+      "season": "Rabi",
+      "mean": 0.5235926661220481
+    },
+    {
+      "crop": "Linseed",
+      "season": "Whole Year",
+      "mean": 0.5924745245123325
+    },
+    {
+      "crop": "Maize",
+      "season": "Autumn",
+      "mean": 1.720190362263018
+    },
+    {
+      "crop": "Maize",
+      "season": "Kharif",
+      "mean": 1.7814573782094445
+    },
+    {
+      "crop": "Maize",
+      "season": "Rabi",
+      "mean": 3.068235110365982
+    },
+    {
+      "crop": "Maize",
+      "season": "Summer",
+      "mean": 2.266100559820008
+    },
+    {
+      "crop": "Maize",
+      "season": "Whole Year",
+      "mean": 3.015039127525674
+    },
+    {
+      "crop": "Maize",
+      "season": "Winter",
+      "mean": 1.6437059484855292
+    },
+    {
+      "crop": "Mango",
+      "season": "Kharif",
+      "mean": 9.322149591729161
+    },
+    {
+      "crop": "Mango",
+      "season": "Whole Year",
+      "mean": 4.6077716397521655
+    },
+    {
+      "crop": "Masoor",
+      "season": "Kharif",
+      "mean": 0.4781175195898826
+    },
+    {
+      "crop": "Masoor",
+      "season": "Rabi",
+      "mean": 0.7136066139048892
+    },
+    {
+      "crop": "Masoor",
+      "season": "Whole Year",
+      "mean": 0.491713777753465
+    },
+    {
+      "crop": "Mesta",
+      "season": "Kharif",
+      "mean": 5.755641499590423
+    },
+    {
+      "crop": "Mesta",
+      "season": "Rabi",
+      "mean": 8.176282051282051
+    },
+    {
+      "crop": "Mesta",
+      "season": "Whole Year",
+      "mean": 1.3377912021488678
+    },
+    {
+      "crop": "Moong(Green Gram)",
+      "season": "Autumn",
+      "mean": 0.22283907736664424
+    },
+    {
+      "crop": "Moong(Green Gram)",
+      "season": "Kharif",
+      "mean": 0.4425911848675295
+    },
+    {
+      "crop": "Moong(Green Gram)",
+      "season": "Rabi",
+      "mean": 0.44811447134716254
+    },
+    {
+      "crop": "Moong(Green Gram)",
+      "season": "Summer",
+      "mean": 0.5755907065328666
+    },
+    {
+      "crop": "Moong(Green Gram)",
+      "season": "Whole Year",
+      "mean": 0.4783737124220614
+    },
+    {
+      "crop": "Moong(Green Gram)",
+      "season": "Winter",
+      "mean": 0.25887806352190185
+    },
+    {
+      "crop": "Moth",
+      "season": "Kharif",
+      "mean": 0.3966954536877482
+    },
+    {
+      "crop": "Moth",
+      "season": "Rabi",
+      "mean": 0.8666666666666667
+    },
+    {
+      "crop": "Moth",
+      "season": "Whole Year",
+      "mean": 0.4537365447139883
+    },
+    {
+      "crop": "Niger Seed",
+      "season": "Kharif",
+      "mean": 0.3926395576299391
+    },
+    {
+      "crop": "Niger Seed",
+      "season": "Rabi",
+      "mean": 0.3691187910176026
+    },
+    {
+      "crop": "Niger Seed",
+      "season": "Whole Year",
+      "mean": 0.3583472741838887
+    },
+    {
+      "crop": "Niger Seed",
+      "season": "Winter",
+      "mean": 0.4433391621745807
+    },
+    {
+      "crop": "Oilseeds Total",
+      "season": "Kharif",
+      "mean": 0.7207084887380033
+    },
+    {
+      "crop": "Oilseeds Total",
+      "season": "Rabi",
+      "mean": 0.7979375049530042
+    },
+    {
+      "crop": "Oilseeds Total",
+      "season": "Whole Year",
+      "mean": 1.0391492829425062
+    },
+    {
+      "crop": "Onion",
+      "season": "Autumn",
+      "mean": 2.0
+    },
+    {
+      "crop": "Onion",
+      "season": "Kharif",
+      "mean": 10.016634908573359
+    },
+    {
+      "crop": "Onion",
+      "season": "Rabi",
+      "mean": 15.670123002306735
+    },
+    {
+      "crop": "Onion",
+      "season": "Summer",
+      "mean": 11.3622880133877
+    },
+    {
+      "crop": "Onion",
+      "season": "Whole Year",
+      "mean": 10.188793226588686
+    },
+    {
+      "crop": "Onion",
+      "season": "Winter",
+      "mean": 2.0
+    },
+    {
+      "crop": "Orange",
+      "season": "Kharif",
+      "mean": 11.074528913175717
+    },
+    {
+      "crop": "Orange",
+      "season": "Whole Year",
+      "mean": 8.58470318152163
+    },
+    {
+      "crop": "Other  Rabi Pulses",
+      "season": "Rabi",
+      "mean": 0.6559932695823879
+    },
+    {
+      "crop": "Other  Rabi Pulses",
+      "season": "Summer",
+      "mean": 0.9833333333333332
+    },
+    {
+      "crop": "Other Cereals & Millets",
+      "season": "Kharif",
+      "mean": 0.6606409450885646
+    },
+    {
+      "crop": "Other Cereals & Millets",
+      "season": "Rabi",
+      "mean": 1.0746621031213404
+    },
+    {
+      "crop": "Other Fresh Fruits",
+      "season": "Whole Year",
+      "mean": 3.6388348883111536
+    },
+    {
+      "crop": "Other Kharif Pulses",
+      "season": "Kharif",
+      "mean": 0.5126612721692386
+    },
+    {
+      "crop": "Other Kharif Pulses",
+      "season": "Rabi",
+      "mean": 1.212266185303875
+    },
+    {
+      "crop": "Other Misc. Pulses",
+      "season": "Kharif",
+      "mean": 0.3119266216277063
+    },
+    {
+      "crop": "Other Misc. Pulses",
+      "season": "Rabi",
+      "mean": 0.3923955955711384
+    },
+    {
+      "crop": "Other Oilseeds",
+      "season": "Kharif",
+      "mean": 3.16249930058965
+    },
+    {
+      "crop": "Other Oilseeds",
+      "season": "Rabi",
+      "mean": 0.5864252378551212
+    },
+    {
+      "crop": "Other Oilseeds",
+      "season": "Whole Year",
+      "mean": 0.7019760748113241
+    },
+    {
+      "crop": "Other Vegetables",
+      "season": "Whole Year",
+      "mean": 5.556494209687746
+    },
+    {
+      "crop": "Paddy",
+      "season": "Autumn",
+      "mean": 1.3045531984634555
+    },
+    {
+      "crop": "Paddy",
+      "season": "Kharif",
+      "mean": 2.0095382098555525
+    },
+    {
+      "crop": "Paddy",
+      "season": "Rabi",
+      "mean": 3.123161063984454
+    },
+    {
+      "crop": "Paddy",
+      "season": "Summer",
+      "mean": 2.6254614734819812
+    },
+    {
+      "crop": "Paddy",
+      "season": "Winter",
+      "mean": 1.8195024086226101
+    },
+    {
+      "crop": "Papaya",
+      "season": "Kharif",
+      "mean": 25.652664940517276
+    },
+    {
+      "crop": "Papaya",
+      "season": "Rabi",
+      "mean": 78.8
+    },
+    {
+      "crop": "Papaya",
+      "season": "Whole Year",
+      "mean": 16.119215634510365
+    },
+    {
+      "crop": "Peas & Beans (Pulses)",
+      "season": "Autumn",
+      "mean": 0.5188034188034188
+    },
+    {
+      "crop": "Peas & Beans (Pulses)",
+      "season": "Kharif",
+      "mean": 2.532201487320134
+    },
+    {
+      "crop": "Peas & Beans (Pulses)",
+      "season": "Rabi",
+      "mean": 1.0601728993941097
+    },
+    {
+      "crop": "Peas & Beans (Pulses)",
+      "season": "Summer",
+      "mean": 6.925364587898705
+    },
+    {
+      "crop": "Peas & Beans (Pulses)",
+      "season": "Whole Year",
+      "mean": 1.7559278466473711
+    },
+    {
+      "crop": "Peas & Beans (Pulses)",
+      "season": "Winter",
+      "mean": 0.5190287972896669
+    },
+    {
+      "crop": "Perilla",
+      "season": "Kharif",
+      "mean": 0.5958030882603937
+    },
+    {
+      "crop": "Pineapple",
+      "season": "Rabi",
+      "mean": 16.16366218263915
+    },
+    {
+      "crop": "Pineapple",
+      "season": "Whole Year",
+      "mean": 12.313450968407826
+    },
+    {
+      "crop": "Pome Fruit",
+      "season": "Whole Year",
+      "mean": 8.271700529347385
+    },
+    {
+      "crop": "Pome Granet",
+      "season": "Kharif",
+      "mean": 12.469846102047127
+    },
+    {
+      "crop": "Potato",
+      "season": "Autumn",
+      "mean": 5.207309941520468
+    },
+    {
+      "crop": "Potato",
+      "season": "Kharif",
+      "mean": 8.641513388562169
+    },
+    {
+      "crop": "Potato",
+      "season": "Rabi",
+      "mean": 16.970193106328423
+    },
+    {
+      "crop": "Potato",
+      "season": "Summer",
+      "mean": 14.588181014335246
+    },
+    {
+      "crop": "Potato",
+      "season": "Whole Year",
+      "mean": 12.03750745967124
+    },
+    {
+      "crop": "Potato",
+      "season": "Winter",
+      "mean": 10.4571025821573
+    },
+    {
+      "crop": "Pulses Total",
+      "season": "Kharif",
+      "mean": 0.4925856419007478
+    },
+    {
+      "crop": "Pulses Total",
+      "season": "Rabi",
+      "mean": 0.7356680685183704
+    },
+    {
+      "crop": "Pulses Total",
+      "season": "Summer",
+      "mean": 0.78125
+    },
+    {
+      "crop": "Pulses Total",
+      "season": "Whole Year",
+      "mean": 0.8201104450480327
+    },
+    {
+      "crop": "Ragi",
+      "season": "Autumn",
+      "mean": 0.6351311709754699
+    },
+    {
+      "crop": "Ragi",
+      "season": "Kharif",
+      "mean": 1.1289291137583348
+    },
+    {
+      "crop": "Ragi",
+      "season": "Rabi",
+      "mean": 1.6763574719397765
+    },
+    {
+      "crop": "Ragi",
+      "season": "Summer",
+      "mean": 1.4809330019040479
+    },
+    {
+      "crop": "Ragi",
+      "season": "Whole Year",
+      "mean": 1.8791152382440135
+    },
+    {
+      "crop": "Ragi",
+      "season": "Winter",
+      "mean": 0.5513840110944668
+    },
+    {
+      "crop": "Rajmash Kholar",
+      "season": "Kharif",
+      "mean": 1.2474901294588707
+    },
+    {
+      "crop": "Rajmash Kholar",
+      "season": "Rabi",
+      "mean": 1.2402233787055947
+    },
+    {
+      "crop": "Rapeseed &Mustard",
+      "season": "Kharif",
+      "mean": 0.3637277109342989
+    },
+    {
+      "crop": "Rapeseed &Mustard",
+      "season": "Rabi",
+      "mean": 0.817886033130103
+    },
+    {
+      "crop": "Rapeseed &Mustard",
+      "season": "Whole Year",
+      "mean": 0.5851211239297659
+    },
+    {
+      "crop": "Rapeseed &Mustard",
+      "season": "Winter",
+      "mean": 0.20254626126714492
+    },
+    {
+      "crop": "Redish",
+      "season": "Whole Year",
+      "mean": 8.457873546912568
+    },
+    {
+      "crop": "Rice",
+      "season": "Autumn",
+      "mean": 1.4168144408426888
+    },
+    {
+      "crop": "Rice",
+      "season": "Kharif",
+      "mean": 2.0130969608001434
+    },
+    {
+      "crop": "Rice",
+      "season": "Rabi",
+      "mean": 2.7011730146570994
+    },
+    {
+      "crop": "Rice",
+      "season": "Summer",
+      "mean": 2.321025394770301
+    },
+    {
+      "crop": "Rice",
+      "season": "Whole Year",
+      "mean": 1.930776143374552
+    },
+    {
+      "crop": "Rice",
+      "season": "Winter",
+      "mean": 1.7456752685394208
+    },
+    {
+      "crop": "Ricebean (Nagadal)",
+      "season": "Kharif",
+      "mean": 1.107430125225784
+    },
+    {
+      "crop": "Rubber",
+      "season": "Whole Year",
+      "mean": 1.1859109662121985
+    },
+    {
+      "crop": "Safflower",
+      "season": "Kharif",
+      "mean": 0.8062648637440305
+    },
+    {
+      "crop": "Safflower",
+      "season": "Rabi",
+      "mean": 0.5520696295083952
+    },
+    {
+      "crop": "Safflower",
+      "season": "Whole Year",
+      "mean": 0.4613865969832764
+    },
+    {
+      "crop": "Samai",
+      "season": "Kharif",
+      "mean": 0.5020987596234944
+    },
+    {
+      "crop": "Samai",
+      "season": "Rabi",
+      "mean": 0.7280895074135052
+    },
+    {
+      "crop": "Sannhamp",
+      "season": "Autumn",
+      "mean": 5.421496953872933
+    },
+    {
+      "crop": "Sannhamp",
+      "season": "Kharif",
+      "mean": 1.2306423773265551
+    },
+    {
+      "crop": "Sannhamp",
+      "season": "Rabi",
+      "mean": 3.598969072164948
+    },
+    {
+      "crop": "Sannhamp",
+      "season": "Whole Year",
+      "mean": 1.2088294529091255
+    },
+    {
+      "crop": "Sannhamp",
+      "season": "Winter",
+      "mean": 0.7186021505376344
+    },
+    {
+      "crop": "Sapota",
+      "season": "Kharif",
+      "mean": 10.267325516590827
+    },
+    {
+      "crop": "Sesamum",
+      "season": "Autumn",
+      "mean": 0.34373685385109454
+    },
+    {
+      "crop": "Sesamum",
+      "season": "Kharif",
+      "mean": 0.3897413908429137
+    },
+    {
+      "crop": "Sesamum",
+      "season": "Rabi",
+      "mean": 0.3304663079278903
+    },
+    {
+      "crop": "Sesamum",
+      "season": "Summer",
+      "mean": 1.1797800082039809
+    },
+    {
+      "crop": "Sesamum",
+      "season": "Whole Year",
+      "mean": 0.5390667226543978
+    },
+    {
+      "crop": "Sesamum",
+      "season": "Winter",
+      "mean": 0.3046592856911825
+    },
+    {
+      "crop": "Small Millets",
+      "season": "Autumn",
+      "mean": 0.5879714546977622
+    },
+    {
+      "crop": "Small Millets",
+      "season": "Kharif",
+      "mean": 0.6615003439178688
+    },
+    {
+      "crop": "Small Millets",
+      "season": "Rabi",
+      "mean": 0.7615508203967913
+    },
+    {
+      "crop": "Small Millets",
+      "season": "Summer",
+      "mean": 1.2894687599758203
+    },
+    {
+      "crop": "Small Millets",
+      "season": "Whole Year",
+      "mean": 0.7543486582034696
+    },
+    {
+      "crop": "Soyabean",
+      "season": "Autumn",
+      "mean": 1.1444444444444444
+    },
+    {
+      "crop": "Soyabean",
+      "season": "Kharif",
+      "mean": 1.044465800695957
+    },
+    {
+      "crop": "Soyabean",
+      "season": "Rabi",
+      "mean": 1.351886151989322
+    },
+    {
+      "crop": "Soyabean",
+      "season": "Whole Year",
+      "mean": 1.1302292588453737
+    },
+    {
+      "crop": "Soyabean",
+      "season": "Winter",
+      "mean": 1.2666666666666666
+    },
+    {
+      "crop": "Sugarcane",
+      "season": "Autumn",
+      "mean": 19.859576699601156
+    },
+    {
+      "crop": "Sugarcane",
+      "season": "Kharif",
+      "mean": 53.06743647589205
+    },
+    {
+      "crop": "Sugarcane",
+      "season": "Rabi",
+      "mean": 20.41708002090039
+    },
+    {
+      "crop": "Sugarcane",
+      "season": "Summer",
+      "mean": 32.82142857142857
+    },
+    {
+      "crop": "Sugarcane",
+      "season": "Whole Year",
+      "mean": 43.27584869376753
+    },
+    {
+      "crop": "Sugarcane",
+      "season": "Winter",
+      "mean": 57.40585440978056
+    },
+    {
+      "crop": "Sunflower",
+      "season": "Kharif",
+      "mean": 0.8606183426749842
+    },
+    {
+      "crop": "Sunflower",
+      "season": "Rabi",
+      "mean": 0.8716088895954479
+    },
+    {
+      "crop": "Sunflower",
+      "season": "Summer",
+      "mean": 1.2116921736013728
+    },
+    {
+      "crop": "Sunflower",
+      "season": "Whole Year",
+      "mean": 1.1968152099333333
+    },
+    {
+      "crop": "Sunflower",
+      "season": "Winter",
+      "mean": 0.6
+    },
+    {
+      "crop": "Sweet Potato",
+      "season": "Autumn",
+      "mean": 3.6
+    },
+    {
+      "crop": "Sweet Potato",
+      "season": "Kharif",
+      "mean": 11.818097715198588
+    },
+    {
+      "crop": "Sweet Potato",
+      "season": "Rabi",
+      "mean": 6.766430063402099
+    },
+    {
+      "crop": "Sweet Potato",
+      "season": "Whole Year",
+      "mean": 8.304514847312157
+    },
+    {
+      "crop": "Sweet Potato",
+      "season": "Winter",
+      "mean": 3.0
+    },
+    {
+      "crop": "Tapioca",
+      "season": "Autumn",
+      "mean": 4.333333333333333
+    },
+    {
+      "crop": "Tapioca",
+      "season": "Kharif",
+      "mean": 12.485828171178095
+    },
+    {
+      "crop": "Tapioca",
+      "season": "Rabi",
+      "mean": 23.925459072517896
+    },
+    {
+      "crop": "Tapioca",
+      "season": "Whole Year",
+      "mean": 20.20843502302451
+    },
+    {
+      "crop": "Tea",
+      "season": "Kharif",
+      "mean": 2.8883047508047506
+    },
+    {
+      "crop": "Tea",
+      "season": "Whole Year",
+      "mean": 2.457911478583051
+    },
+    {
+      "crop": "Tobacco",
+      "season": "Kharif",
+      "mean": 1.1949521463495798
+    },
+    {
+      "crop": "Tobacco",
+      "season": "Rabi",
+      "mean": 3.4797127342183516
+    },
+    {
+      "crop": "Tobacco",
+      "season": "Summer",
+      "mean": 3.0508011368645978
+    },
+    {
+      "crop": "Tobacco",
+      "season": "Whole Year",
+      "mean": 1.7132037187627636
+    },
+    {
+      "crop": "Tomato",
+      "season": "Kharif",
+      "mean": 19.593092736234443
+    },
+    {
+      "crop": "Tomato",
+      "season": "Rabi",
+      "mean": 15.297484353917733
+    },
+    {
+      "crop": "Tomato",
+      "season": "Whole Year",
+      "mean": 7.712626222990068
+    },
+    {
+      "crop": "Total Foodgrain",
+      "season": "Kharif",
+      "mean": 1.3375623657360267
+    },
+    {
+      "crop": "Total Foodgrain",
+      "season": "Rabi",
+      "mean": 1.4978948669793453
+    },
+    {
+      "crop": "Total Foodgrain",
+      "season": "Summer",
+      "mean": 2.511506135813172
+    },
+    {
+      "crop": "Total Foodgrain",
+      "season": "Whole Year",
+      "mean": 1.9953392798973781
+    },
+    {
+      "crop": "Turmeric",
+      "season": "Autumn",
+      "mean": 0.8333333333333334
+    },
+    {
+      "crop": "Turmeric",
+      "season": "Kharif",
+      "mean": 4.2211206238213235
+    },
+    {
+      "crop": "Turmeric",
+      "season": "Rabi",
+      "mean": 3.153555979583511
+    },
+    {
+      "crop": "Turmeric",
+      "season": "Summer",
+      "mean": 0.6666666666666666
+    },
+    {
+      "crop": "Turmeric",
+      "season": "Whole Year",
+      "mean": 2.6733385012128865
+    },
+    {
+      "crop": "Turmeric",
+      "season": "Winter",
+      "mean": 0.5
+    },
+    {
+      "crop": "Turnip",
+      "season": "Whole Year",
+      "mean": 0.6034304737565055
+    },
+    {
+      "crop": "Urad",
+      "season": "Autumn",
+      "mean": 0.2370628703680787
+    },
+    {
+      "crop": "Urad",
+      "season": "Kharif",
+      "mean": 0.5143519024473175
+    },
+    {
+      "crop": "Urad",
+      "season": "Rabi",
+      "mean": 0.5126022881648152
+    },
+    {
+      "crop": "Urad",
+      "season": "Summer",
+      "mean": 0.5371881961467708
+    },
+    {
+      "crop": "Urad",
+      "season": "Whole Year",
+      "mean": 0.5504009844024917
+    },
+    {
+      "crop": "Urad",
+      "season": "Winter",
+      "mean": 0.2838704452073222
+    },
+    {
+      "crop": "Varagu",
+      "season": "Kharif",
+      "mean": 0.9889069748614223
+    },
+    {
+      "crop": "Varagu",
+      "season": "Rabi",
+      "mean": 0.7308469041982817
+    },
+    {
+      "crop": "Wheat",
+      "season": "Kharif",
+      "mean": 0.1319440137629293
+    },
+    {
+      "crop": "Wheat",
+      "season": "Rabi",
+      "mean": 2.127068721063637
+    },
+    {
+      "crop": "Wheat",
+      "season": "Summer",
+      "mean": 1.3505168951308253
+    },
+    {
+      "crop": "Wheat",
+      "season": "Whole Year",
+      "mean": 1.8096985059333366
+    },
+    {
+      "crop": "Wheat",
+      "season": "Winter",
+      "mean": 1.9333484639710392
+    }
+  ],
+  "districts": [
+    "24 Paraganas North",
+    "24 Paraganas South",
+    "Adilabad",
+    "Agar Malwa",
+    "Agra",
+    "Ahmadabad",
+    "Ahmednagar",
+    "Aizawl",
+    "Ajmer",
+    "Akola",
+    "Alappuzha",
+    "Aligarh",
+    "Alirajpur",
+    "Allahabad",
+    "Almora",
+    "Alwar",
+    "Ambala",
+    "Ambedkar Nagar",
+    "Amethi",
+    "Amravati",
+    "Amreli",
+    "Amritsar",
+    "Amroha",
+    "Anand",
+    "Anantapur",
+    "Anantnag",
+    "Anjaw",
+    "Anugul",
+    "Anuppur",
+    "Araria",
+    "Ariyalur",
+    "Arwal",
+    "Ashoknagar",
+    "Auraiya",
+    "Aurangabad",
+    "Azamgarh",
+    "Badgam",
+    "Bagalkot",
+    "Bageshwar",
+    "Baghpat",
+    "Bahraich",
+    "Baksa",
+    "Balaghat",
+    "Balangir",
+    "Baleshwar",
+    "Ballia",
+    "Balod",
+    "Baloda Bazar",
+    "Balrampur",
+    "Banas Kantha",
+    "Banda",
+    "Bandipora",
+    "Bangalore Rural",
+    "Banka",
+    "Bankura",
+    "Banswara",
+    "Barabanki",
+    "Baramulla",
+    "Baran",
+    "Bardhaman",
+    "Bareilly",
+    "Bargarh",
+    "Barmer",
+    "Barnala",
+    "Barpeta",
+    "Barwani",
+    "Bastar",
+    "Basti",
+    "Bathinda",
+    "Beed",
+    "Begusarai",
+    "Belgaum",
+    "Bellary",
+    "Bemetara",
+    "Bengaluru Urban",
+    "Betul",
+    "Bhadrak",
+    "Bhagalpur",
+    "Bhandara",
+    "Bharatpur",
+    "Bharuch",
+    "Bhavnagar",
+    "Bhilwara",
+    "Bhind",
+    "Bhiwani",
+    "Bhojpur",
+    "Bhopal",
+    "Bidar",
+    "Bijapur",
+    "Bijnor",
+    "Bikaner",
+    "Bilaspur",
+    "Birbhum",
+    "Bishnupur",
+    "Bokaro",
+    "Bongaigaon",
+    "Boudh",
+    "Budaun",
+    "Bulandshahr",
+    "Buldhana",
+    "Bundi",
+    "Burhanpur",
+    "Buxar",
+    "Cachar",
+    "Chamarajanagar",
+    "Chamba",
+    "Chamoli",
+    "Champawat",
+    "Champhai",
+    "Chandauli",
+    "Chandel",
+    "Chandigarh",
+    "Chandrapur",
+    "Changlang",
+    "Chatra",
+    "Chhatarpur",
+    "Chhindwara",
+    "Chikballapur",
+    "Chikmagalur",
+    "Chirang",
+    "Chitradurga",
+    "Chitrakoot",
+    "Chittoor",
+    "Chittorgarh",
+    "Churachandpur",
+    "Churu",
+    "Coimbatore",
+    "Coochbehar",
+    "Cuddalore",
+    "Cuttack",
+    "Dadra And Nagar Haveli",
+    "Dakshin Kannad",
+    "Damoh",
+    "Dang",
+    "Dantewada",
+    "Darbhanga",
+    "Darjeeling",
+    "Darrang",
+    "Datia",
+    "Dausa",
+    "Davangere",
+    "Dehradun",
+    "Deogarh",
+    "Deoghar",
+    "Deoria",
+    "Dewas",
+    "Dhalai",
+    "Dhamtari",
+    "Dhanbad",
+    "Dhar",
+    "Dharmapuri",
+    "Dharwad",
+    "Dhemaji",
+    "Dhenkanal",
+    "Dholpur",
+    "Dhubri",
+    "Dhule",
+    "Dibang Valley",
+    "Dibrugarh",
+    "Dima Hasao",
+    "Dimapur",
+    "Dinajpur Dakshin",
+    "Dinajpur Uttar",
+    "Dindigul",
+    "Dindori",
+    "Doda",
+    "Dohad",
+    "Dumka",
+    "Dungarpur",
+    "Durg",
+    "East District",
+    "East Garo Hills",
+    "East Godavari",
+    "East Jaintia Hills",
+    "East Kameng",
+    "East Khasi Hills",
+    "East Siang",
+    "East Singhbum",
+    "Ernakulam",
+    "Erode",
+    "Etah",
+    "Etawah",
+    "Faizabad",
+    "Faridabad",
+    "Faridkot",
+    "Farrukhabad",
+    "Fatehabad",
+    "Fatehgarh Sahib",
+    "Fatehpur",
+    "Fazilka",
+    "Firozabad",
+    "Firozepur",
+    "Gadag",
+    "Gadchiroli",
+    "Gajapati",
+    "Ganderbal",
+    "Gandhinagar",
+    "Ganganagar",
+    "Ganjam",
+    "Garhwa",
+    "Gariyaband",
+    "Gautam Buddha Nagar",
+    "Gaya",
+    "Ghaziabad",
+    "Ghazipur",
+    "Giridih",
+    "Goalpara",
+    "Godda",
+    "Golaghat",
+    "Gomati",
+    "Gonda",
+    "Gondia",
+    "Gopalganj",
+    "Gorakhpur",
+    "Gulbarga",
+    "Gumla",
+    "Guna",
+    "Guntur",
+    "Gurdaspur",
+    "Gurgaon",
+    "Gwalior",
+    "Hailakandi",
+    "Hamirpur",
+    "Hanumangarh",
+    "Hapur",
+    "Harda",
+    "Hardoi",
+    "Haridwar",
+    "Hassan",
+    "Hathras",
+    "Haveri",
+    "Hazaribagh",
+    "Hingoli",
+    "Hisar",
+    "Hooghly",
+    "Hoshangabad",
+    "Hoshiarpur",
+    "Howrah",
+    "Hyderabad",
+    "Idukki",
+    "Imphal East",
+    "Imphal West",
+    "Indore",
+    "Jabalpur",
+    "Jagatsinghapur",
+    "Jaipur",
+    "Jaisalmer",
+    "Jajapur",
+    "Jalandhar",
+    "Jalaun",
+    "Jalgaon",
+    "Jalna",
+    "Jalore",
+    "Jalpaiguri",
+    "Jammu",
+    "Jamnagar",
+    "Jamtara",
+    "Jamui",
+    "Janjgir-Champa",
+    "Jashpur",
+    "Jaunpur",
+    "Jehanabad",
+    "Jhabua",
+    "Jhajjar",
+    "Jhalawar",
+    "Jhansi",
+    "Jharsuguda",
+    "Jhunjhunu",
+    "Jind",
+    "Jodhpur",
+    "Jorhat",
+    "Junagadh",
+    "Kabirdham",
+    "Kachchh",
+    "Kadapa",
+    "Kaimur (Bhabua)",
+    "Kaithal",
+    "Kalahandi",
+    "Kamrup",
+    "Kamrup Metro",
+    "Kanchipuram",
+    "Kandhamal",
+    "Kangra",
+    "Kanker",
+    "Kannauj",
+    "Kanniyakumari",
+    "Kannur",
+    "Kanpur Dehat",
+    "Kanpur Nagar",
+    "Kapurthala",
+    "Karaikal",
+    "Karauli",
+    "Karbi Anglong",
+    "Kargil",
+    "Karimganj",
+    "Karimnagar",
+    "Karnal",
+    "Karur",
+    "Kasaragod",
+    "Kasganj",
+    "Kathua",
+    "Katihar",
+    "Katni",
+    "Kaushambi",
+    "Kendrapara",
+    "Kendujhar",
+    "Khagaria",
+    "Khammam",
+    "Khandwa",
+    "Khargone",
+    "Kheda",
+    "Kheri",
+    "Khordha",
+    "Khowai",
+    "Khunti",
+    "Kinnaur",
+    "Kiphire",
+    "Kishanganj",
+    "Kishtwar",
+    "Kodagu",
+    "Koderma",
+    "Kohima",
+    "Kokrajhar",
+    "Kolar",
+    "Kolasib",
+    "Kolhapur",
+    "Kollam",
+    "Kondagaon",
+    "Koppal",
+    "Koraput",
+    "Korba",
+    "Korea",
+    "Kota",
+    "Kottayam",
+    "Kozhikode",
+    "Krishna",
+    "Krishnagiri",
+    "Kulgam",
+    "Kullu",
+    "Kupwara",
+    "Kurnool",
+    "Kurukshetra",
+    "Kurung Kumey",
+    "Kushi Nagar",
+    "Lahul And Spiti",
+    "Lakhimpur",
+    "Lakhisarai",
+    "Lalitpur",
+    "Latehar",
+    "Latur",
+    "Lawngtlai",
+    "Leh Ladakh",
+    "Lohardaga",
+    "Lohit",
+    "Longding",
+    "Longleng",
+    "Lower Dibang Valley",
+    "Lower Subansiri",
+    "Lucknow",
+    "Ludhiana",
+    "Lunglei",
+    "Madhepura",
+    "Madhubani",
+    "Madurai",
+    "Maharajganj",
+    "Mahasamund",
+    "Mahbubnagar",
+    "Mahe",
+    "Mahendragarh",
+    "Mahesana",
+    "Mahoba",
+    "Mainpuri",
+    "Malappuram",
+    "Maldah",
+    "Malkangiri",
+    "Mamit",
+    "Mandi",
+    "Mandla",
+    "Mandsaur",
+    "Mandya",
+    "Mansa",
+    "Marigaon",
+    "Mathura",
+    "Mau",
+    "Mayurbhanj",
+    "Medak",
+    "Medinipur East",
+    "Medinipur West",
+    "Meerut",
+    "Mewat",
+    "Mirzapur",
+    "Moga",
+    "Mokokchung",
+    "Mon",
+    "Moradabad",
+    "Morena",
+    "Muktsar",
+    "Mumbai",
+    "Mungeli",
+    "Munger",
+    "Murshidabad",
+    "Muzaffarnagar",
+    "Muzaffarpur",
+    "Mysore",
+    "Nabarangpur",
+    "Nadia",
+    "Nagaon",
+    "Nagapattinam",
+    "Nagaur",
+    "Nagpur",
+    "Nainital",
+    "Nalanda",
+    "Nalbari",
+    "Nalgonda",
+    "Namakkal",
+    "Namsai",
+    "Nanded",
+    "Nandurbar",
+    "Narayanpur",
+    "Narmada",
+    "Narsinghpur",
+    "Nashik",
+    "Navsari",
+    "Nawada",
+    "Nawanshahr",
+    "Nayagarh",
+    "Neemuch",
+    "Nicobars",
+    "Nizamabad",
+    "North And Middle Andaman",
+    "North District",
+    "North Garo Hills",
+    "North Goa",
+    "North Tripura",
+    "Nuapada",
+    "Osmanabad",
+    "Pakur",
+    "Palakkad",
+    "Palamu",
+    "Palghar",
+    "Pali",
+    "Palwal",
+    "Panch Mahals",
+    "Panchkula",
+    "Panipat",
+    "Panna",
+    "Papum Pare",
+    "Parbhani",
+    "Pashchim Champaran",
+    "Patan",
+    "Pathanamthitta",
+    "Pathankot",
+    "Patiala",
+    "Patna",
+    "Pauri Garhwal",
+    "Perambalur",
+    "Peren",
+    "Phek",
+    "Pilibhit",
+    "Pithoragarh",
+    "Pondicherry",
+    "Poonch",
+    "Porbandar",
+    "Prakasam",
+    "Pratapgarh",
+    "Pudukkottai",
+    "Pulwama",
+    "Pune",
+    "Purbi Champaran",
+    "Puri",
+    "Purnia",
+    "Purulia",
+    "Rae Bareli",
+    "Raichur",
+    "Raigad",
+    "Raigarh",
+    "Raipur",
+    "Raisen",
+    "Rajauri",
+    "Rajgarh",
+    "Rajkot",
+    "Rajnandgaon",
+    "Rajsamand",
+    "Ramanagara",
+    "Ramanathapuram",
+    "Ramban",
+    "Ramgarh",
+    "Rampur",
+    "Ranchi",
+    "Rangareddi",
+    "Ratlam",
+    "Ratnagiri",
+    "Rayagada",
+    "Reasi",
+    "Rewa",
+    "Rewari",
+    "Ri Bhoi",
+    "Rohtak",
+    "Rohtas",
+    "Rudra Prayag",
+    "Rupnagar",
+    "S.A.S Nagar",
+    "Sabar Kantha",
+    "Sagar",
+    "Saharanpur",
+    "Saharsa",
+    "Sahebganj",
+    "Saiha",
+    "Salem",
+    "Samastipur",
+    "Samba",
+    "Sambalpur",
+    "Sambhal",
+    "Sangli",
+    "Sangrur",
+    "Sant Kabeer Nagar",
+    "Sant Ravidas Nagar",
+    "Saraikela Kharsawan",
+    "Saran",
+    "Satara",
+    "Satna",
+    "Sawai Madhopur",
+    "Sehore",
+    "Senapati",
+    "Seoni",
+    "Sepahijala",
+    "Serchhip",
+    "Shahdol",
+    "Shahjahanpur",
+    "Shajapur",
+    "Shamli",
+    "Sheikhpura",
+    "Sheohar",
+    "Sheopur",
+    "Shimla",
+    "Shimoga",
+    "Shivpuri",
+    "Shopian",
+    "Shravasti",
+    "Siddharth Nagar",
+    "Sidhi",
+    "Sikar",
+    "Simdega",
+    "Sindhudurg",
+    "Singrauli",
+    "Sirmaur",
+    "Sirohi",
+    "Sirsa",
+    "Sitamarhi",
+    "Sitapur",
+    "Sivaganga",
+    "Sivasagar",
+    "Siwan",
+    "Solan",
+    "Solapur",
+    "Sonbhadra",
+    "Sonepur",
+    "Sonipat",
+    "Sonitpur",
+    "South Andamans",
+    "South District",
+    "South Garo Hills",
+    "South Goa",
+    "South Tripura",
+    "South West Garo Hills",
+    "South West Khasi Hills",
+    "Spsr Nellore",
+    "Srikakulam",
+    "Srinagar",
+    "Sukma",
+    "Sultanpur",
+    "Sundargarh",
+    "Supaul",
+    "Surajpur",
+    "Surat",
+    "Surendranagar",
+    "Surguja",
+    "Tamenglong",
+    "Tapi",
+    "Tarn Taran",
+    "Tawang",
+    "Tehri Garhwal",
+    "Thane",
+    "Thanjavur",
+    "The Nilgiris",
+    "Theni",
+    "Thiruvallur",
+    "Thiruvananthapuram",
+    "Thiruvarur",
+    "Thoubal",
+    "Thrissur",
+    "Tikamgarh",
+    "Tinsukia",
+    "Tirap",
+    "Tiruchirappalli",
+    "Tirunelveli",
+    "Tiruppur",
+    "Tiruvannamalai",
+    "Tonk",
+    "Tuensang",
+    "Tumkur",
+    "Tuticorin",
+    "Udaipur",
+    "Udalguri",
+    "Udam Singh Nagar",
+    "Udhampur",
+    "Udupi",
+    "Ujjain",
+    "Ukhrul",
+    "Umaria",
+    "Una",
+    "Unakoti",
+    "Unnao",
+    "Upper Siang",
+    "Upper Subansiri",
+    "Uttar Kannad",
+    "Uttar Kashi",
+    "Vadodara",
+    "Vaishali",
+    "Valsad",
+    "Varanasi",
+    "Vellore",
+    "Vidisha",
+    "Villupuram",
+    "Virudhunagar",
+    "Visakhapatanam",
+    "Vizianagaram",
+    "Warangal",
+    "Wardha",
+    "Washim",
+    "Wayanad",
+    "West District",
+    "West Garo Hills",
+    "West Godavari",
+    "West Jaintia Hills",
+    "West Kameng",
+    "West Khasi Hills",
+    "West Siang",
+    "West Singhbhum",
+    "West Tripura",
+    "Wokha",
+    "Yadgir",
+    "Yamunanagar",
+    "Yanam",
+    "Yavatmal",
+    "Zunheboto"
+  ]
+}

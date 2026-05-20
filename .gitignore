@@ -1,0 +1,13 @@
+venv/
+venv_gpu/
+__pycache__/
+data/
+logs/
+*.pyc
+.env
+
+# Large model files - stored on Google Drive
+models/best_weights.h5
+models/plant_disease_model.h5
+models/yield_model.pkl
+models/saved_model/
