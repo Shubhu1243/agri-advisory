@@ -4,7 +4,12 @@
 import os
 import numpy as np
 from PIL import Image
-import tensorflow as tf
+
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
+try:
+    import tensorflow as tf
+except ImportError:
+    import tf_keras as tf
 
 SAVED_MODEL_PATH = "models/saved_model"
 WEIGHTS_PATH     = "models/best_weights.h5"
