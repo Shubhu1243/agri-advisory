@@ -78,7 +78,6 @@ sns.heatmap(
     xticklabels=class_names,
     yticklabels=class_names
 )
-
 plt.xlabel("Predicted")
 plt.ylabel("Actual")
 plt.title("Confusion Matrix")

@@ -5,8 +5,8 @@ def download_models():
     os.makedirs("models", exist_ok=True)
 
     files = {
-        "models/best_weights.h5":  "YOUR_BEST_WEIGHTS_FILE_ID",
-        "models/yield_model.pkl":  "YOUR_YIELD_MODEL_FILE_ID",
+        "models/best_weights.h5":  "1a-Wdh9hkesXZaM7NxIHsP5RqtBWsPeFP",
+        "models/yield_model.pkl":  "1TMHG-c5u-HaWRih8vZydAu-NCvizgYVa",
     }
 
     for path, file_id in files.items():

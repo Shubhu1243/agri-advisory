@@ -1,3 +1,5 @@
+from download_models import download_models
+download_models()
 import streamlit as st
 import streamlit.components.v1 as components
 st.set_page_config(
