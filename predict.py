@@ -10,6 +10,7 @@ try:
     import tensorflow as tf
 except ImportError:
     import tf_keras as tf
+    tf = None
 
 SAVED_MODEL_PATH = "models/saved_model"
 WEIGHTS_PATH     = "models/best_weights.h5"
