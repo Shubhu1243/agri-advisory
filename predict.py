@@ -6,11 +6,12 @@ import numpy as np
 from PIL import Image
 
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
+tf = None
 try:
     import tensorflow as tf
+    print("✅ TensorFlow loaded")
 except ImportError:
-    import tf_keras as tf
-    tf = None
+    print("⚠️ TensorFlow not available — disease detection in demo mode")
 
 SAVED_MODEL_PATH = "models/saved_model"
 WEIGHTS_PATH     = "models/best_weights.h5"
@@ -52,11 +53,14 @@ def preprocess_image(image: Image.Image) -> np.ndarray:
     Preprocess image using EfficientNet's preprocess_input.
     EfficientNet expects pixel values in [0,255] range — NOT /255 normalized.
     """
+    if tf is None:
+        return np.expand_dims(np.zeros((224, 224, 3), dtype=np.float32), axis=0)
+
     from tensorflow.keras.applications.efficientnet import preprocess_input
     image = image.convert("RGB")
     image = image.resize(IMAGE_SIZE, Image.LANCZOS)
     arr = np.array(image, dtype=np.float32)
-    arr = preprocess_input(arr)          # ← KEY: EfficientNet preprocessing
+    arr = preprocess_input(arr)
     return np.expand_dims(arr, axis=0)
 
 
@@ -65,6 +69,9 @@ def augment_image(image: Image.Image, seed: int) -> np.ndarray:
     Apply random augmentation for Test Time Augmentation (TTA).
     Uses EfficientNet preprocessing — NOT /255 normalization.
     """
+    if tf is None:
+        return np.expand_dims(np.zeros((224, 224, 3), dtype=np.float32), axis=0)
+
     from tensorflow.keras.applications.efficientnet import preprocess_input
     from PIL import ImageEnhance
     import random
@@ -97,14 +104,16 @@ def augment_image(image: Image.Image, seed: int) -> np.ndarray:
     img = img.resize(IMAGE_SIZE, Image.LANCZOS)
 
     arr = np.array(img, dtype=np.float32)
-    arr = preprocess_input(arr)          # ← KEY: EfficientNet preprocessing
+    arr = preprocess_input(arr)
     return np.expand_dims(arr, axis=0)
 
 
 def build_keras_model():
     """Rebuild model architecture and load weights."""
+    if tf is None:
+        return None
+
     from tensorflow.keras.applications import EfficientNetB3
-    from tensorflow.keras.applications.efficientnet import preprocess_input
     from tensorflow.keras.layers import (
         Dense, GlobalAveragePooling2D, Dropout, BatchNormalization
     )
@@ -132,7 +141,12 @@ def build_keras_model():
 def load_model():
     """
     Load model — tries saved_model first, then weights fallback.
+    Returns None if tensorflow is not available.
     """
+    if tf is None:
+        print("⚠️ TensorFlow not available — running in demo mode")
+        return None
+
     # Option 1: Load from saved_model folder
     if os.path.exists(SAVED_MODEL_PATH):
         try:
@@ -146,9 +160,10 @@ def load_model():
     if os.path.exists(WEIGHTS_PATH):
         try:
             model = build_keras_model()
-            model.load_weights(WEIGHTS_PATH)
-            print("✅ Loaded model from weights")
-            return model
+            if model is not None:
+                model.load_weights(WEIGHTS_PATH)
+                print("✅ Loaded model from weights")
+                return model
         except Exception as e:
             print(f"Weights load failed: {e}")
 
@@ -159,6 +174,9 @@ def run_inference(model, preprocessed: np.ndarray) -> np.ndarray:
     """
     Run inference — handles both Keras model and SavedModel.
     """
+    if tf is None or model is None:
+        return np.ones(38) / 38
+
     try:
         # Standard Keras model
         return model.predict(preprocessed, verbose=0)[0]
@@ -172,19 +190,19 @@ def run_inference(model, preprocessed: np.ndarray) -> np.ndarray:
             return output[output_key].numpy()[0]
         except Exception as e:
             print(f"Inference error: {e}")
-            return np.ones(38) / 38  # uniform fallback
+            return np.ones(38) / 38
 
 
 def predict_disease(image: Image.Image, model=None, use_tta: bool = True,
                     tta_steps: int = 7) -> dict:
     """
     Run inference with optional Test Time Augmentation.
-    TTA averages predictions over multiple augmented versions.
+    Falls back to demo mode if model is None or TensorFlow unavailable.
     """
     class_names = load_class_names()
     demo_mode = False
 
-    if model is None:
+    if model is None or tf is None:
         demo_mode = True
         num_classes = len(class_names)
         np.random.seed(abs(hash(image.tobytes()[:50])) % (2**31))
@@ -219,11 +237,11 @@ def predict_disease(image: Image.Image, model=None, use_tta: bool = True,
 
     return {
         "predicted_class": top_predictions[0][0],
-        "confidence": top_predictions[0][1],
+        "confidence":      top_predictions[0][1],
         "top_predictions": top_predictions,
-        "demo_mode": demo_mode,
-        "tta_used": use_tta and model is not None,
-        "class_names": class_names
+        "demo_mode":       demo_mode,
+        "tta_used":        use_tta and model is not None and tf is not None,
+        "class_names":     class_names,
     }
 
 
