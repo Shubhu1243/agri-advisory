@@ -278,7 +278,7 @@ st.markdown("""
 st.markdown("""
 <div class="hero-wrap">
     <div class="logo-ring">🌾</div>
-    <div class="hero-title">Intelligent Crop<br><span>Advisory System</span></div>
+    <div class="hero-title">Intelligent Agri<br><span>Advisory System</span></div>
     <div class="hero-sub">
         AI-powered tools built for Indian farmers — detect diseases early
         and predict crop yields with confidence.
